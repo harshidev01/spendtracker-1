@@ -1,6 +1,19 @@
 import mongoose, { models, Schema } from "mongoose";
 
+
 const userSchema = new Schema({
+  lastUpdatedAt: {
+    type: String,
+    required: false,
+    default: null,
+  },
+  
+  createdAt: {
+    type: String,
+    required: false,
+    default: null,
+  },
+
   authToken: {
     type: String,
   },
@@ -33,17 +46,21 @@ const userSchema = new Schema({
     required: false,
     default: null,
   },
-  loggedIn:{
-    type:Boolean,
-    required:false,
-    default:false
+  loggedIn: {
+    type: Boolean,
+    required: false,
+    default: false,
   },
-  password:{
-    type:String,
-    required:false
-  }
+  password: {
+    type: String,
+    required: false,
+  },
+  
+  
+},{
+  versionKey: false,
 });
 
-const userModel =  models.users ||  mongoose.model("users", userSchema) 
+const userModel = models.users || mongoose.model("users", userSchema);
 
 export default userModel;

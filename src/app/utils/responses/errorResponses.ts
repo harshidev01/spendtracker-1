@@ -1,7 +1,0 @@
-export const MISSING_EMAIL_ID = "EMAIL_ID_REQUIRED"
-export const MISSING_FISRT_NAME = "FISRT_NAME_REQUIRED"
-export const MISSING_PASSWORD = "PASSWORD_REQUIRED"
-export const MONGO_DB_ERROR = "SERVER_ERROR"
-export const SUCCESS = "SUCCESS"
-export const ERROR = "ERROR"
-export const USER_EXISTS = "USER_EXISTS"

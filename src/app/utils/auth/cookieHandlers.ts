@@ -1,4 +1,4 @@
-export function generateAuthToken(length: number = 32): string {
+export function getAUthToken(length: number = 32): string {
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let token = '';
     
